@@ -3,16 +3,26 @@
 # dependencies
 /**/node_modules
 
+/api/node_modules
+/api/yarn.lock
+/api/package-lock.json
+/api/.env
+
 /client/node_modules
 /client/yarn.lock
 /client/package-lock.json
+/client/.env
+
+/app/node_modules
+/app/yarn.lock
+/app/package-lock.json
+/app/.env
 
 /api/node_modules
 /api/*.env
 /api/.env
 api/.env
 
-/app/node_modules
 /node_modules
 /app/dist/
 /app/ios/
