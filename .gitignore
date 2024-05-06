@@ -2,7 +2,11 @@
 
 # dependencies
 /**/node_modules
+
 /client/node_modules
+/client/yarn.lock
+/client/package-lock.json
+
 /api/node_modules
 /api/*.env
 /api/.env

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "lifehealth",
-    "slug": "lifehealth",
+    "name": "cineplus",
+    "slug": "cineplus",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -26,14 +26,14 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#1B1B1B"
       },
-      "package": "com.br.lifehealth"
+      "package": "com.br.cineplus"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "1d642c35-c23f-4b4f-b6cf-e20f5827d197"
+        "projectId": "1861761c-22b0-4601-8dc8-f394660d2851"
       }
     },
     "theme": {
