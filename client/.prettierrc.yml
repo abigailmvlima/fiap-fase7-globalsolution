@@ -1,0 +1,19 @@
+trailingComma: all
+arrowParens: always
+bracketSpacing: true
+endOfLine: lf
+
+# Longitud máxima de línea (80 caracteres en este caso)
+printWidth: 80
+
+# Estilo de comillas (comillas simples)
+singleQuote: true
+
+# Uso de punto y coma al final de las sentencias
+semi: true
+
+# Sangrado (indentación) con espacios
+tabWidth: 2
+
+# Uso de tabulaciones en lugar de espacios
+useTabs: false

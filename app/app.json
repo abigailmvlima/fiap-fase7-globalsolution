@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "lifehealth",
+    "slug": "lifehealth",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#1B1B1B",
+      "flexdirection": "row",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Se necesita acceso a la cámara para la detección facial."
+      }
+    },
+    "android": {
+      "permissions": ["CAMERA"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1B1B1B"
+      },
+      "package": "com.br.lifehealth"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1d642c35-c23f-4b4f-b6cf-e20f5827d197"
+      }
+    },
+    "theme": {
+      "textColor": "#ffffff"
+    }
+  }
+}

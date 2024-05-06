@@ -1,0 +1,34 @@
+# Configuração base do ESLint
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:jsx-a11y/recommended
+
+# Especifique a versão do ambiente (Node.js ou navegador)
+env:
+  browser: true
+  node: true
+
+# Opções de parser para TypeScript
+parser: '@typescript-eslint/parser'
+
+# Regras específicas do TypeScript
+plugins:
+  - '@typescript-eslint'
+
+rules:
+  'react/react-in-jsx-scope': off
+  'indent': off
+  'semi': off
+  '@typescript-eslint/no-unused-vars': off
+  '@typescript-eslint/no-explicit-anything': off
+  '@typescript-eslint/no-explicit-any': off
+  prefer-const: off
+
+# Configurações adicionais
+settings:
+  react:
+    version: 'detect' # Detecta automaticamente a versão do React
+
+# Regras e configurações adicionais
