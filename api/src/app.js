@@ -2,8 +2,12 @@ import express from 'express';
 import mongoose from 'mongoose';
 import userRoutes from './modules/user/userRoutes';
 import movieRoutes from './modules/movie/movieRoutes';
+import categoryRoutes from './modules/category/categoryRoutes';
 import loginRoutes from './modules/login/loginRoutes';
 import authenticateToken from './modules/middleware/authMiddleware';
+import authRoute from './modules/middleware/authRoute';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 app.use(express.json());
@@ -21,8 +25,9 @@ app.use('/auth', loginRoutes);
 router.use(authenticateToken);
 app.use(router);
 
-app.use('/users', userRoutes);
-app.use('/movies', movieRoutes);
+app.use('/movie', authRoute, movieRoutes);
+app.use('/users', authRoute, userRoutes);
+app.use('/category', authRoute, categoryRoutes);
 
 app.get('/version', (req, res) => {
   res.status(200).json({

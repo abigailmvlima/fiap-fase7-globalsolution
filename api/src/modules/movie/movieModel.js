@@ -5,16 +5,19 @@ const movieSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  director: {
-    type: String,
+  category: {
+    type: mongoose.Types.ObjectId,
     required: true
   },
-  releaseYear: {
+  note: {
     type: Number
   },
-  genres: [{
+  duration: {
     type: String
-  }]
+  },
+  sinopsis: {
+    type: String
+  }
 });
 
 const Movie = mongoose.model('Movie', movieSchema);

@@ -21,6 +21,7 @@ router.post("/login", async (req, res) => {
       return res.status(401).json({ message: "Credenciais inválidas" });
     }
 
+    console.log(123, process.env.JWT_SECRET)
     // Cria e retorna um token JWT para o usuário logado
     const token = jwt.sign({ user: user.id }, process.env.JWT_SECRET, {
       expiresIn: "1h",
