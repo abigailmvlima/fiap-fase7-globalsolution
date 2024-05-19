@@ -9,9 +9,9 @@ interface IContainerProps {
 export const Container = styled.div<IContainerProps>`
   display: flex;
   flex-direction: row;
-  background-color: #386123;
+  background-color: #F9A300;
 
-  border: 2px solid #5c8249;
+  border: 2px solid #e39401;
 
   border-radius: 15px;
   height: 47px;
@@ -20,11 +20,11 @@ export const Container = styled.div<IContainerProps>`
   cursor: pointer;
 
   &:hover {
-    background-color: #386123;
+    background-color: #cf8f1a;
   }
 
   &:active {
-    background-color: #386123;
+    background-color: #a57314;
   }
 `;
 

@@ -10,7 +10,7 @@ const ViewHome = () => {
       <S.Body>
         <S.Image>
           <S.IconEcoMiles
-            src={require('../../assets/png/iconEcoMiles.png')}
+            src={require('../../assets/png/logoCine.png')}
             alt={''}
           />
         </S.Image>

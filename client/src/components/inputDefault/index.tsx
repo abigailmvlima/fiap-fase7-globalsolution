@@ -11,6 +11,7 @@ type TValue = string | undefined;
 
 interface propState {
   name: string;
+  label?: string;
   type?: EInputType;
   size: EInputSize;
   position: EInputPosition;
@@ -34,7 +35,7 @@ const InputDefault = ({ type = EInputType.text, ...props }: propState) => {
 
   const { control, setError, clearErrors, formState, getValues } =
     useFormContext();
-  const { isRequired, messageErrorText, showIcons, size, position } = props;
+  const { isRequired, messageErrorText, showIcons, size, position, label } = props;
   const { errors } = formState;
 
   const GetErros = () => {
@@ -137,6 +138,9 @@ const InputDefault = ({ type = EInputType.text, ...props }: propState) => {
 
   return (
     <S.Container>
+      <S.Label>
+        {label && label}
+      </S.Label>
       <Controller
         control={control}
         rules={{

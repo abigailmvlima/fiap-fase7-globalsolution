@@ -19,6 +19,15 @@ export const Title = styled.div`
   margin-left: 5px;
 `;
 
+export const Label = styled.div`
+display: flex;
+text-align: center;
+font-size: 15px;
+font-family: ${themes.fontFamily.inter};
+color: #b9b9b9;
+letter-spacing: 2px;
+margin-left: 5px;
+`;
 export const Base = styled.div`
   height: 57px;
 `;
@@ -52,7 +61,7 @@ export const Input = styled.input<IInput>`
   background-color: transparent;
   margin: 5px 0;
   outline: none;
-  border-bottom: 3px solid #617459;
+  border-bottom: 2px solid #ececec;
 
   display: flex;
   flex-grow: 1;

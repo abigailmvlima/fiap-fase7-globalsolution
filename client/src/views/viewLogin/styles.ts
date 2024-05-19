@@ -11,6 +11,7 @@ export const Container = styled.div`
   align-items: center;
   flex-grow: 1;
   flex-direction: row;
+  background-color: #01234B;
 `;
 
 export const Body = styled.div`
@@ -27,10 +28,11 @@ export const Icon = styled.div`
   padding: 50px 0;
 `;
 
-export const EcoMilesPlanet = styled(svg.EcoMilesPlanet)`
+export const LogoCine = styled.img`
   display: flex;
-  width: 70%;
+  width: 80%;
 `;
+
 
 export const Form = styled.div`
   display: flex;

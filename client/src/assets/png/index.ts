@@ -1,9 +1,9 @@
 import IcoGoogle from './icoGoogle.png';
-import IconEcoMiles from './iconEcoMiles.png';
+import LogoCine from './logoCine.png';
 
 const svg = {
-  IconEcoMiles,
   IcoGoogle,
+  LogoCine
 };
 
 export default svg;

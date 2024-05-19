@@ -4,6 +4,7 @@ export const Container = styled.div`
   body {
     margin: 0;
     padding: 0;
+    background-color: #01234B;
   }
 
   display: flex;
@@ -11,7 +12,7 @@ export const Container = styled.div`
   height: 100vh;
   flex-direction: row;
   justify-content: center;
-  background-color: #f3f9ee;
+  background-color: #01234B;
 `;
 
 export const Page = styled.div`

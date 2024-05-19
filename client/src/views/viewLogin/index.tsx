@@ -21,27 +21,23 @@ const ViewLogin = () => {
     <S.Container>
       <S.Body>
         <S.Icon>
-          <S.EcoMilesPlanet />
+          <S.LogoCine src={require('../../assets/png/logoCine.png')} alt={''} />
         </S.Icon>
         <FormProvider {...methods}>
           <S.Form>
-            <S.Image>
-              <S.IconEcoMiles
-                src={require('../../assets/png/iconEcoMiles.png')}
-                alt={''}
-              />
-            </S.Image>
             <S.Input>
               <InputDefault
+                label={'email'}
                 position={EInputPosition.center}
-                type={EInputType.cpf}
+                type={EInputType.mail}
                 isLowerCase={true}
-                name={'cpf'}
-                placeholder={'000.000.000-00'}
+                name={'mail'}
+                placeholder={''}
               />
             </S.Input>
             <S.Input>
               <InputDefault
+              label={'senha'}
                 position={EInputPosition.center}
                 type={EInputType.password}
                 isLowerCase={true}
