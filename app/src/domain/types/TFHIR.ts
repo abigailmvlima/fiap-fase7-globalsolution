@@ -16,7 +16,7 @@ export type TFHIRPacient = {
   id?: string | number;
   name: string;
   phone: string;
-  email: string;
+  mail: string;
   birthDate: string;
   address?: TFHIRPacientAdress;
   maritalStatus?: TMaritalStatus;

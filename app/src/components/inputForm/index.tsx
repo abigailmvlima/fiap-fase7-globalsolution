@@ -79,7 +79,7 @@ const InputForm = ({ type = EInputType.text, ...props }: propState) => {
       } else {
         setError(props.name, {
           type: "invalidEmail",
-          message: messageErrorText || "Invalid email",
+          message: messageErrorText || "Invalid mail",
         });
       }
       return dataValue;

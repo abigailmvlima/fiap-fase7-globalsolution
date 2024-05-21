@@ -16,7 +16,7 @@ export const Title = styled.div`
   font-family: ${themes.fontFamily.inter};
   color: #000;
   letter-spacing: 2px;
-  margin-left: 5px;
+  margin-left: 2px;
 `;
 
 export const Label = styled.div`
@@ -49,14 +49,16 @@ const inputPositionCenterCSS = css`
   text-align: center;
 `;
 
-const inputPositionRightCSS = css``;
+const inputPositionRightCSS = css`
+  text-align: right;
+`;
 
 export const Input = styled.input<IInput>`
   display: flex;
   width: 100%;
   font-size: 18px;
   font-family: ${themes.fontFamily.inter};
-  color: #000;
+  color: #ececec;
   border: 1px solid transparent;
   background-color: transparent;
   margin: 5px 0;
@@ -68,7 +70,8 @@ export const Input = styled.input<IInput>`
   font-size: ${(p) => (p.size === EInputSize.regular ? '25px' : '20px')};
   padding: 8px;
   border-radius: 6px;
-  font-weight: 900;
+  font-weight: 900;  
+
   ${(p) =>
     p.position === EInputPosition.left
       ? inputPositionLeftCSS

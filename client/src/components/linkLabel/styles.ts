@@ -14,9 +14,9 @@ export const Content = styled.div`
 
 export const Titulo = styled.div`
   display: flex;
-  color: ${themes.colors.v1};
+  color: ${themes.colors.v3};
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-family: ${themes.fontFamily.inter};
   font-weight: 200;
   letter-spacing: 1px;

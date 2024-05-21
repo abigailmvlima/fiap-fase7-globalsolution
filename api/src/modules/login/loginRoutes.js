@@ -6,11 +6,10 @@ const router = express.Router();
 
 // Rota para fazer login
 router.post("/login", async (req, res) => {
-  const { email, password } = req.body;
-
+  const { mail, password } = req.body;  
   try {
     // Verifica se o usuário existe no banco de dados
-    const user = await User.findOne({ email });
+    const user = await User.findOne({ mail });
     if (!user) {
       return res.status(401).json({ message: "Credenciais inválidas" });
     }
@@ -35,17 +34,17 @@ router.post("/login", async (req, res) => {
 
 // Criar um novo usuário
 router.post("/register", async (req, res) => {
-  const { name, email, password } = req.body;
+  const { name, mail, password } = req.body;
 
   try {
     // Verifique se o usuário já existe no banco de dados
-    const existingUser = await User.findOne({ email });
+    const existingUser = await User.findOne({ mail });
     if (existingUser) {
       return res.status(400).json({ message: "Email already exists" });
     }
 
     // Crie um novo usuário
-    const newUser = new User({ name, email, password });
+    const newUser = new User({ name, mail, password });
     await newUser.save();
 
     res.status(201).json({ message: "User registered successfully" });

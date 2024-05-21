@@ -7,11 +7,14 @@ import loginRoutes from './modules/login/loginRoutes';
 import authenticateToken from './modules/middleware/authMiddleware';
 import authRoute from './modules/middleware/authRoute';
 import dotenv from 'dotenv';
+import cors from 'cors';
+
+
 dotenv.config();
 
 const app = express();
 app.use(express.json());
-
+app.use(cors());
 const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27018/cineplus';
 
 mongoose.connect(mongoURI)
@@ -20,6 +23,13 @@ mongoose.connect(mongoURI)
 
 const router = express.Router();
 
+const allowedOrigins = ['http://localhost:3000'];
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true, // Permitir envio de cookies
+  methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 
 app.use('/auth', loginRoutes);
 router.use(authenticateToken);
@@ -36,6 +46,8 @@ app.get('/version', (req, res) => {
     lastUpdated: "2024-05-07"
   });
 });
+
+
 
 
 const PORT = process.env.PORT || 3526;

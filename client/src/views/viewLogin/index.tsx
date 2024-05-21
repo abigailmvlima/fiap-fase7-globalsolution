@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { NavigateFunction, useNavigate } from 'react-router-dom';
 
 import ButtonGo from 'components/buttonGo';
 import InputDefault from 'components/inputDefault';
@@ -7,15 +7,20 @@ import { EInputPosition, EInputType } from 'domains/enums/EInput';
 import { FormProvider, useForm } from 'react-hook-form';
 import * as S from './styles';
 
+import serviceAuth from 'services/serviceAuth';
+import { ILogin } from 'domains/interfaces/login';
+
 const ViewLogin = () => {
   const navigate = useNavigate();
   const methods = useForm({
     defaultValues: {
       mail: '',
-      pass: '',
-      rememberLogin: true,
+      password: '',
+      remember: true,
     },
   });
+
+  const { handleSubmit } = methods;
 
   return (
     <S.Container>
@@ -27,8 +32,8 @@ const ViewLogin = () => {
           <S.Form>
             <S.Input>
               <InputDefault
-                label={'email'}
-                position={EInputPosition.center}
+                label={'mail'}
+                position={EInputPosition.right}
                 type={EInputType.mail}
                 isLowerCase={true}
                 name={'mail'}
@@ -37,8 +42,8 @@ const ViewLogin = () => {
             </S.Input>
             <S.Input>
               <InputDefault
-              label={'senha'}
-                position={EInputPosition.center}
+                label={'senha'}
+                position={EInputPosition.right}
                 type={EInputType.password}
                 isLowerCase={true}
                 name={'password'}
@@ -50,7 +55,13 @@ const ViewLogin = () => {
             </S.Forgot>
             <S.Buttons>
               <S.Button>
-                <ButtonGo label={'Entrar'} onClick={() => navigate('/home')} />
+                <ButtonGo
+                  label={'Entrar'}
+                  onClick={async () => {
+                    const data: ILogin = methods.getValues();
+                    await serviceAuth.onLogin(data, navigate);
+                  }}
+                />
               </S.Button>
             </S.Buttons>
             <S.Registers>

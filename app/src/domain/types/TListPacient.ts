@@ -7,7 +7,7 @@ export type TListPacient = {
   phone: {
     title: string;
   };
-  email: {
+  mail: {
     title: string;
   };
   birthDate: {

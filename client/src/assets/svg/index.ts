@@ -4,6 +4,7 @@ import { ReactComponent as IconEcoMiles } from './iconEcoMiles.svg';
 import { ReactComponent as Linkedin } from './iconLinkedin.svg';
 import { ReactComponent as Instagram } from './instagram.svg';
 import { ReactComponent as LogoSmall } from './logoSmall.svg';
+import { ReactComponent as PlusCircle } from './plusCircle.svg';
 
 const svg = {
   EcoMilesPlanet,
@@ -11,7 +12,7 @@ const svg = {
   Instagram,
   Linkedin,
   LogoSmall,
-  IconEcoMiles,
+  PlusCircle,
 };
 
 export default svg;

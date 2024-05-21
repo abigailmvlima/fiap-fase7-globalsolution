@@ -21,8 +21,7 @@ export const Body = styled.div`
 
 export const Icon = styled.div`
   display: flex;
-  border-right: 1px solid #a7a8a4;
-  width: 600px;
+  width: 600px;  
   justify-content: center;
   align-items: center;
   padding: 50px 0;
@@ -37,7 +36,7 @@ export const LogoCine = styled.img`
 export const Form = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   width: 500px;
   margin: 0 50px 0 60px;
   padding: 50px 0;
@@ -57,6 +56,7 @@ export const IconEcoMiles = styled.img`
 
 export const Input = styled.div`
   display: flex;
+  margin-top: 15px;
 `;
 
 export const Forgot = styled.div`
@@ -87,6 +87,7 @@ export const Or = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  color: ${themes.colors.v3};
 `;
 
 export const LinkLabel = styled.div`

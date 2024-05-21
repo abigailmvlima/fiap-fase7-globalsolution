@@ -9,7 +9,7 @@ export enum EAutoComplete {
   "cc-exp-month" = "cc-exp-month",
   "cc-exp-year" = "cc-exp-year",
   "cc-number" = "cc-number",
-  "email" = "email",
+  "mail" = "mail",
   "gender" = "gender",
   "name" = "name",
   "name-family" = "name-family",

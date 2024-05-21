@@ -10,8 +10,6 @@ export const Container = styled.div`
   align-items: center;
   flex-grow: 1;
   flex-direction: row;
-  background-color: #fdfffb;
-  border: 1px solid #dce5d8;
 `;
 
 export const Body = styled.div`
@@ -85,6 +83,13 @@ export const ButtonRules = styled.div`
   margin-bottom: 30px;
 `;
 
+export const BaseButtom = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+  margin-bottom: 40px;
+`;
+
 export const TitleBase = styled.div`
   display: flex;
   flex-direction: column;
@@ -93,6 +98,7 @@ export const TitleBase = styled.div`
   margin: 0 10%;
   margin-bottom: 40px;
 `;
+
 
 export const Title = styled.div`
   display: flex;
@@ -105,15 +111,7 @@ export const Title = styled.div`
   text-align: center;
 `;
 
-export const SubTitle = styled.div`
+export const Row = styled.div`
   display: flex;
-  font-size: 24px;
-  font-family: 'Roboto';
-  font-weight: 200;
-  letter-spacing: 2px;
-  color: #585858;
-  margin: 5px;
-  text-align: center;
-  line-height: 34px;
-  margin-bottom: 30px;
+  flex-direction: column;
 `;

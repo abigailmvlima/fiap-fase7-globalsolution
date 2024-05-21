@@ -35,6 +35,7 @@ const InputDefault = ({ type = EInputType.text, ...props }: propState) => {
 
   const { control, setError, clearErrors, formState, getValues } =
     useFormContext();
+    
   const { isRequired, messageErrorText, showIcons, size, position, label } = props;
   const { errors } = formState;
 
@@ -77,7 +78,7 @@ const InputDefault = ({ type = EInputType.text, ...props }: propState) => {
       } else {
         setError(props.name, {
           type: 'invalidEmail',
-          message: messageErrorText || 'Invalid email',
+          message: messageErrorText || 'Invalid mail',
         });
       }
       return dataValue;

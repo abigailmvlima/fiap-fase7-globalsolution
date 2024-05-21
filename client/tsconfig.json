@@ -23,7 +23,9 @@
       "assets/*": ["assets/*"],
       "themes/*": ["themes/*"],
       "domains/*": ["domains/*"],
-      "utils/*": ["utils/*"]
+      "utils/*": ["utils/*"],
+      "services/*": ["services/*"],
+      "api/*": ["api/*"],
     }
   },
   "include": ["src"]

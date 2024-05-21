@@ -1,7 +1,7 @@
 export interface IUser {
   _id?: string;
   name?: string;
-  email?: string;
+  mail?: string;
   document?: string;
   username?: string;
   active?: boolean;
@@ -16,7 +16,7 @@ export interface IUser {
 
 export interface IUserRegister {
   name: string;
-  email: string;
+  mail: string;
   password: string;
   confirmPassword?: string;
   document: string;
@@ -25,6 +25,6 @@ export interface IUserRegister {
 }
 
 export interface IUserAuth {
-  email: string;
+  mail: string;
   password: string;
 }
