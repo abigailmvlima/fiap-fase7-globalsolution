@@ -2,6 +2,13 @@
 
 **Resumo do Projeto "Anomalias Terrestres"**
 
+## ESTILOS
+
+![image](https://github.com/abigailmvlima/fiap-fase7-globalsolution/assets/81816418/e649afc8-9de1-410f-9fa3-c60a3b44af34)
+
+![image](https://github.com/abigailmvlima/fiap-fase7-globalsolution/assets/81816418/5e373740-3d49-4557-8c0b-af2be6cbd771)
+
+
 ## Blue
 Blue Detector de Anomalias, uma solução inovadora que utiliza inteligência artificial para monitorar e analisar imagens de satélite em tempo real, abordando três áreas críticas: atividades de pesca ilegal, avistamentos de espécies em perigo e empoderamento das comunidades costeiras. Além disso, estamos lançando um aplicativo que permite à população denunciar pontos de anomalias e desastres, garantindo que as autoridades tomem medidas rápidas e eficazes.
 
