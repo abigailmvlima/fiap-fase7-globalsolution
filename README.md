@@ -1,4 +1,4 @@
-# Blue / AJUDE-ME
+# BLUE / AJUDE-ME
 
 **Resumo do Projeto "Anomalias Terrestres"**
 
