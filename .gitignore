@@ -13,10 +13,15 @@
 /client/package-lock.json
 /client/.env
 
-/app/node_modules
-/app/yarn.lock
-/app/package-lock.json
-/app/.env
+/blue-app/node_modules
+/blue-app/yarn.lock
+/blue-app/package-lock.json
+/blue-app/.env
+
+/weword-app/node_modules
+/weword-app/yarn.lock
+/weword-app/package-lock.json
+/weword-app/.env
 
 /api/node_modules
 /api/*.env
