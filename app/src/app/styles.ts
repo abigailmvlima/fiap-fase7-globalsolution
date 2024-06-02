@@ -10,10 +10,10 @@ export const Container = styled(GestureHandlerRootView)`
   display: flex;
   width: ${screenWidth};
   height: ${screenHeight};
-  position: relative;
+  position: relative;  
 `;
 
 export const Content = styled.View`
   display: flex;
-  flex-grow: 1;
+  flex-grow: 1;  
 `;

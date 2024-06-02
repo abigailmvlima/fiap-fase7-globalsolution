@@ -7,15 +7,12 @@ import styled, { css } from "styled-components/native";
 export const Container = styled.View<ITheme>`
   display: flex;
   flex-direction: column;
-  padding-top: 0;
-  margin-bottom: 8px;
+  width:${(p) => p.size ? `${p.size}%` : '100%' };
 `;
 
 export const Content = styled.View<ITheme>`
   display: flex;
   flex-direction: column;
-  border-bottom-width: 3px;
-  border-bottom-color: ${(p) => themes[p.themeSelected].buttonGo.bgBorder};
   padding-top: 0;
 `;
 
@@ -46,7 +43,7 @@ export const Icon = styled.View`
 
 interface IInput extends ITheme {
   showIcons?: boolean;
-  size: EInputSize;
+  size?: EInputSize;
   position: EInputPosition;
 }
 
@@ -63,23 +60,27 @@ const inputPositionCenterCSS = css`
 
 const inputPositionRightCSS = css``;
 
-export const Input = styled.TextInput<IInput>`
-  display: flex;
+export const Input = styled.TextInput.attrs<IInput>(props => ({
+  placeholderTextColor: '#93C7E0' // substitua pelo código da cor desejada
+}))<IInput>`
   flex-grow: 1;
-  font-size: ${(p) => (p.size === EInputSize.regular ? "25px" : "20px")};
-  padding: 8px;
+  border-width: 1px;
+  border-color: #93C7E0;
   border-radius: 6px;
+  background-color: #fff;
+  font-size: ${(p) => (p.size === EInputSize.regular ? "17px" : "20px")};
+  padding: 15px 15px;
   color: ${(p) => themes[p.themeSelected].inputForm.color};
-  font-weight: 900;
+  font-weight: 400;
   ${(p) => p.showIcons === true && inputShowIconsCSS};
   ${(p) =>
     p.position === EInputPosition.left
       ? inputPositionLeftCSS
       : p.position === EInputPosition.center
-        ? inputPositionCenterCSS
-        : p.position === EInputPosition.right
-          ? inputPositionRightCSS
-          : inputPositionLeftCSS};
+      ? inputPositionCenterCSS
+      : p.position === EInputPosition.right
+      ? inputPositionRightCSS
+      : inputPositionLeftCSS};
 `;
 
 export const ErrorText = styled.Text`
@@ -99,6 +100,10 @@ export const LabelBase = styled.View`
 
 export const Label = styled.Text`
   display: flex;
+  color: #93C7E0;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 5px 0;
 `;
 
 export const InputBase = styled.Text`

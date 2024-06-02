@@ -12,12 +12,15 @@ const movieSchema = new mongoose.Schema(
       ref: "Category",
     },
     note: {
-      type: Number,
+      type: String,
     },
     duration: {
       type: String,
     },
     sinopsis: {
+      type: String,
+    },
+    image: {
       type: String,
     },
   },

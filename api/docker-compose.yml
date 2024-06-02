@@ -19,7 +19,7 @@ services:
     image: mongo:latest
     container_name: cineplus-db
     ports:
-      - "27018:27017"  # Mapeia a porta 27017 do container para a porta 27018 do host
+      - "27019:27017"  
     volumes:
       - mongodb_data:/data/db
 

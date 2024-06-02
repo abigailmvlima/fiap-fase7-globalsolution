@@ -1,35 +1,11 @@
-import LogoCinePlus from './logoCinePlus.svg';
-
-import ArrowLeftDark from "./arrowLeftDark.svg";
-import IconCar from "./iconCar.svg";
-import IconClient from "./iconClient.svg";
-import IconClose from "./iconClose.svg";
-import IconHome from "./iconHome.svg";
-import IconMenu from "./iconMenu.svg";
-import IconSac from "./iconSac.svg";
-import IconSearch from "./iconSearch.svg";
-import Logo from "./logo.svg";
-import LogoGoogleSmall from "./logoGoogleSmall.svg";
-import LogoHorizontal from "./logoHorizontal.svg";
-import LogoLogin from "./logoLogin.svg";
-import Planeta from "./planeta.svg";
+import LogoText from './logoText.svg';
+import LogoTextWhite from './logoTextWhite.svg';
+import ArrowBack from "./arrowBack.svg"
 
 const data = {
-  LogoCinePlus,
-
-  IconSearch,
-  Planeta,
-  IconHome,
-  IconMenu,
-  IconClient,
-  ArrowLeftDark,
-  Logo,
-  LogoHorizontal,
-  LogoGoogleSmall,
-  IconCar,
-  LogoLogin,
-  IconClose,
-  IconSac,
+  LogoText,
+  ArrowBack,
+  LogoTextWhite
 };
 
 export default data;

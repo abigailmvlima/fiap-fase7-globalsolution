@@ -1,29 +1,33 @@
-import { Dimensions } from "react-native";
-import styled from "styled-components/native";
+import styled, { css } from 'styled-components/native';
 
-import svg from "@assets/svg";
-import { ITheme } from "@domain/interfaces/ITheme";
-import themes from "@themes/themes";
-
-const screenWidth = Dimensions.get("window").width;
-const screenHeight = Dimensions.get("window").height;
+import { ITheme } from '@domain/interfaces/ITheme';
 
 export const Container = styled.View<ITheme>`
   display: flex;
   flex-direction: column;
-  background-color: ${(p) => themes[p.themeSelected].colors.v2};
-  border-color: ${(p) => themes[p.themeSelected].colors.v1};
-  border-top-width: 2px;
-  height: ${screenHeight * 0.12};
-  width: ${screenWidth};
+  padding: 0 5%;
+  background-color: #00a6f8;
+  
 `;
 
 export const Content = styled.View`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 5px;
+`;
+
+export const Photo = styled.View`
+  display: flex;
+  flex-direction: row;  
   justify-content: center;
-  margin-top: 15px;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
 `;
 
 export const Col = styled.View`
@@ -42,34 +46,10 @@ export const ColText = styled.Text`
   text-align: center;
 `;
 
-export const IconHome = styled(svg.IconHome)`
+export const Title = styled.Text`
   display: flex;
-  width: 70px;
-  height: 70px;
-`;
-
-export const IconClose = styled(svg.IconClose)`
-  display: flex;
-  width: 70px;
-  height: 70px;
-`;
-
-export const IconClient = styled(svg.IconClient)`
-  display: flex;
-  width: 70px;
-  height: 70px;
-  margin-right: 2px;
-`;
-
-export const IconCar = styled(svg.IconCar)`
-  display: flex;
-  width: 70px;
-  height: 70px;
-  margin-right: 5px;
-`;
-export const IconSac = styled(svg.IconSac)`
-  display: flex;
-  width: 70px;
-  height: 70px;
-  margin-right: 5px;
+  color: #3b3d40;
+  margin-top: 8px;
+  letter-spacing: 2px;
+  text-align: center;
 `;

@@ -1,6 +1,6 @@
-import { INavigateRouteFunc } from "@domain/interfaces/INavigation";
-import { THistory } from "@domain/types/THistory";
-import { ERoute } from "@show/index";
+import { INavigateRouteFunc } from '@domain/interfaces/INavigation';
+import { THistory } from '@domain/types/THistory';
+import { ERoute } from '@show/index';
 
 export interface INavigate {
   (newRoute: ERoute, data?: any): void;
@@ -18,8 +18,8 @@ export type TNavigateRoute = {
   home: INavigateRouteFunc;
   menu: INavigateRouteFunc;
   login: INavigateRouteFunc;
-  reward: INavigateRouteFunc;
-  chat: INavigateRouteFunc;
+  register: INavigateRouteFunc;
+  details: INavigateRouteFunc;
 };
 
 export type TNavigation = {

@@ -15,46 +15,75 @@ export const Contents = styled.View`
   margin: 0 4%;
 `;
 
-export const Footer = styled.View`
-  display: flex;
-`;
 
 export const Header = styled.View`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 15px;
-  & > :nth-child(1) {
-    width: 150px;
-    height: 150px;
-  }
+  margin: 0 15px;
+  margin-top: 30px;
+  margin-bottom: 5px;
 `;
 
-export const Buttons = styled.View`
-  display: flex;
-  flex-direction: column;
-  margin: 5px 5%;
-  align-items: center;
-`;
-
-export const ButtonGo = styled.View`
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-`;
-
-export const TextOr = styled.Text<ITheme>`
-  display: flex;
-  margin: 55px 0;
-  font-size: 17px;
-  color: ${(p) => themes[p.themeSelected].colors.v9};
-`;
-
-export const ButtomRegister = styled.View`
-  display: flex;
-`;
 
 export const Form = styled.View`
   display: flex;
   margin: 0 6%;
 `;
+
+export const Logo = styled.View`
+  display: flex;
+  margin-top: 15px;  
+  margin-bottom: 15px;
+`;
+
+export const LogoText = styled.View`
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 15px;
+`;
+
+export const Footer = styled.View`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const FooterBase = styled.View`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 45px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+`;
+
+export const TitleFooter = styled.Text`
+  display: flex;
+  font-family: 'Itim_400Regular';
+  font-size: 16px;
+  color: #717070;
+`;
+
+export const TitleFooterSpan = styled.Text`
+  display: flex;
+  font-size: 16px;
+  color: ${themes.default.colors.v10};
+  margin: 0 5px;
+  font-family: 'Itim_400Regular';
+`;
+
+export const Buttons = styled.View`
+  display: flex;
+  flex-direction: column;
+  margin: 0 25px;
+  align-items: center;
+`;
+
+export const Button = styled.View`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 8px 0;
+`;
+

@@ -30,6 +30,7 @@ const Archivo_600SemiBold_Italic = "Archivo_600SemiBold_Italic";
 const Archivo_700Bold_Italic = "Archivo_700Bold_Italic";
 const Archivo_800ExtraBold_Italic = "Archivo_800ExtraBold_Italic";
 const Archivo_900Black_Italic = "Archivo_900Black_Italic";
+const Itim_400Regular = 'Itim_400Regular'
 
 const themes: TThemes = {
   [ETheme.default]: {
@@ -41,8 +42,24 @@ const themes: TThemes = {
     buttonGo: {
       color: colors.white,
       bg: colors.v5,
-      bgBorder: colors.v4,
+      bgBorder: colors.v17,
     },
+    buttonCancel: {
+      color: colors.v16,
+      bg: colors.white,
+      bgBorder: colors.white,
+    },
+    buttonPrimary: {
+      color: colors.white,
+      bg: colors.v10,
+      bgBorder: colors.v10,
+    },
+    buttonSecondary: {
+      color: colors.v10,
+      bg: colors.white,
+      bgBorder: colors.v10,
+    },
+
     buttonLink: {
       color: colors.link,
       bg: colors.v4,
@@ -90,6 +107,21 @@ const themes: TThemes = {
       color: colors.white,
       bg: colors.v4,
       bgBorder: colors.v3,
+    },
+    buttonCancel: {
+      color: colors.v16,
+      bg: colors.white,
+      bgBorder: colors.white,
+    },
+    buttonPrimary: {
+      color: colors.v16,
+      bg: colors.v10,
+      bgBorder: colors.v10,
+    },
+    buttonSecondary: {
+      color: colors.white,
+      bg: colors.v10,
+      bgBorder: colors.v10,
     },
     buttonLink: {
       color: colors.link,
@@ -159,6 +191,8 @@ const themes: TThemes = {
     Archivo_700Bold_Italic,
     Archivo_800ExtraBold_Italic,
     Archivo_900Black_Italic,
+    
+    Itim_400Regular
 
     // interLight: Inter_300Light,
     // interRegular: Inter_400Regular,

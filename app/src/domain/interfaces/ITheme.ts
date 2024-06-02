@@ -1,9 +1,12 @@
-import { EModelComponent } from "@domain/enum/EModelComponent";
-import { ETheme } from "@domain/enum/ETheme";
+import { EModelComponent } from '@domain/enum/EModelComponent';
+import { ETheme } from '@domain/enum/ETheme';
+import { EThemeButtomType } from '@domain/enum/EThemeButtomType';
 
 export interface ITheme {
   themeSelected: ETheme;
   typeModel?: EModelComponent;
+  type?: EThemeButtomType;
+  size?: string;
 }
 
 export type TThemesColors = {
@@ -103,6 +106,8 @@ export type TThemes = {
     Archivo_700Bold_Italic?: string;
     Archivo_800ExtraBold_Italic?: string;
     Archivo_900Black_Italic?: string;
+
+    Itim_400Regular?: string;
   };
   default: {
     colors: TThemesColors;
@@ -112,6 +117,9 @@ export type TThemes = {
     };
     inputForm: TThemesImputForm;
     buttonGo: TThemesButton;
+    buttonCancel: TThemesButton;
+    buttonPrimary: TThemesButton
+    buttonSecondary: TThemesButton;
     buttonLink: TThemesButton;
     textDisplay: TTextDisplay;
     panelDisplay: TPanelDisplay;
@@ -128,6 +136,9 @@ export type TThemes = {
     };
     inputForm: TThemesImputForm;
     buttonGo: TThemesButton;
+    buttonCancel: TThemesButton;
+    buttonPrimary: TThemesButton;
+    buttonSecondary: TThemesButton;
     buttonLink: TThemesButton;
     textDisplay: TTextDisplay;
     panelDisplay: TPanelDisplay;

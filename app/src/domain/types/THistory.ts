@@ -1,5 +1,7 @@
+import { ERoute } from "@show/index";
+
 export type THistory = {
-  route: string;
+  route: ERoute;
   data?: any;
   routeOld?: string;
 };

@@ -32,6 +32,10 @@ import {
   Archivo_900Black_Italic,
 } from "@expo-google-fonts/archivo";
 
+import {
+  Itim_400Regular
+} from "@expo-google-fonts/itim";
+
 import App from "./src/app";
 
 export default function AppGeral() {
@@ -64,6 +68,8 @@ export default function AppGeral() {
     Archivo_700Bold_Italic,
     Archivo_800ExtraBold_Italic,
     Archivo_900Black_Italic,
+
+    Itim_400Regular
   });
 
   if (!fontsLoaded) {

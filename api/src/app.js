@@ -8,25 +8,29 @@ import authenticateToken from './modules/middleware/authMiddleware';
 import authRoute from './modules/middleware/authRoute';
 import dotenv from 'dotenv';
 import cors from 'cors';
-
+import bodyParser from 'body-parser';
 
 dotenv.config();
 
 const app = express();
-app.use(express.json());
+
+// Set the limit for express.json()
+app.use(express.json({ limit: '100mb' }));
 app.use(cors());
-const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27018/cineplus';
+app.use(bodyParser.urlencoded({ limit: '100mb', extended: true }));
+
+const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27019/cineplus';
 
 mongoose.connect(mongoURI)
-.then(() => console.log('MongoDB connected'))
-.catch(err => console.log(err));
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.log(err));
 
 const router = express.Router();
 
 const allowedOrigins = ['http://localhost:3000'];
 app.use(cors({
   origin: allowedOrigins,
-  credentials: true, // Permitir envio de cookies
+  credentials: true, // Allow sending cookies
   methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
@@ -46,9 +50,6 @@ app.get('/version', (req, res) => {
     lastUpdated: "2024-05-07"
   });
 });
-
-
-
 
 const PORT = process.env.PORT || 3526;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

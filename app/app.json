@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "cineplus",
-    "slug": "cineplus",
+    "name": "fiapblue",
+    "slug": "fiapblue",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -26,14 +26,14 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#1B1B1B"
       },
-      "package": "com.br.cineplus"
+      "package": "com.br.fiapblue"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "1861761c-22b0-4601-8dc8-f394660d2851"
+        "projectId": "ec290570-3478-4f7b-a50f-692d6ff0c198"
       }
     },
     "theme": {
