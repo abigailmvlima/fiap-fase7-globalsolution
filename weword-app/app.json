@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "fiapblue",
+    "slug": "fiapblue",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#1B1B1B",
+      "flexdirection": "row",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Se necesita acceso a la cámara para la detección facial."
+      }
+    },
+    "android": {
+      "permissions": ["CAMERA"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1B1B1B"
+      },
+      "package": "com.br.fiapblue"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ec290570-3478-4f7b-a50f-692d6ff0c198"
+      }
+    },
+    "theme": {
+      "textColor": "#ffffff"
+    }
+  }
+}
